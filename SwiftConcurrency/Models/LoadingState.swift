@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+/// Состояние загрузки для UI
+enum LoadingState: Sendable, Equatable {
+    case idle
+    case loading
+    case loaded
+    case error(String)
+}
